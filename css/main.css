@@ -1,13 +1,6 @@
 /* ------------------------------------------------------------------------------
-	Template Name: Minifolio
-	Author: Designstub
-	Author URI: http://www.designstub.com
-	License: GNU General Public License version 3.0
-	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Version: 1.0
 
 /* ------------------------------------------------------------------------------
-	Typography
 -------------------------------------------------------------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
@@ -334,17 +327,20 @@ ul li {
 .intro {
 	background-color: #000000;
 }
+
+.video-container {
+	height: 600px;
+}
+
 .video-container video {
-	min-width: 100%;
-	min-height: 100%;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 .video-container img{
-	min-width: 100%;
-	min-height: 100%;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: cover;
+	display: none;
 }
 /* ------------------------------------------------------------------------------
 	 Serives
@@ -499,7 +495,7 @@ ul li {
 	background: #3bc492;
 	color: #fff;
 	margin-top: 30px;
-padding:15px 30px 15px 30px;
+	padding:15px 30px 15px 30px;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 5px;
@@ -536,7 +532,7 @@ padding:15px 30px 15px 30px;
 	text-align: left;
 }
 .footer-top {
-	background-color: #181818;
+	background-color: #808080;
 	padding-top: 50px;
 }
 .footer-bottom {
@@ -547,16 +543,19 @@ padding:15px 30px 15px 30px;
 	margin-bottom: 80px;
 }
 .footer h5 {
-	color: #fff;
-}
-.footer h5 {
-	margin-bottom: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 20px;
+	font-weight: 500;
 }
 .footer p {
-	color: rgba(255, 255, 255, 0.25);
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	line-height: 150%;
 }
 .footer a {
 	color: rgba(255, 255, 255, 0.50);
+	font-size: 20px;
+	line-height: 150%;
 }
 .footer a:hover {
 	color: #e84545;
@@ -578,3 +577,90 @@ padding:15px 30px 15px 30px;
 	font-size: 11px;
 	margin: 0 2px;
 }
+
+.add-on input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid white;
+	background-color: grey;
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	font-size: 110%;
+	margin-top: 20px;
+}
+.form-control {
+	border-radius: 0px;
+
+}
+.input-group-btn button {
+	border: 0px solid grey;
+	border-bottom: 1px solid white;
+	background-color: grey;
+	border-color: white;
+	margin-top: 20px;
+}
+
+.btn {
+	border-radius: 0px;
+	border-color: white;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+	background-color: grey;
+	border-color: white;
+}
+
+.btn-default.focus, .btn-default:focus {
+	background-color: grey;
+	border-color: white;
+}
+
+.btn.active, .btn:active {
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	border-color: white;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+	background-color: grey;
+	border-color: white;
+}
+
+.btn-default:hover {
+	background-color: grey;
+	border-color: white;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: 0px auto -webkit-focus-ring-color;
+}
+.form-control:focus {
+	border-color: white;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+}
+
+input::-webkit-input-placeholder {
+	padding: 0px;
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+	color: rgba(255, 255, 255, 0.5) !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(255, 255, 255, 0.5) !important;  
+}
+ 
+input:-ms-input-placeholder {  
+	color: rgba(255, 255, 255, 0.5) !important;  
+}
+
+.form-control {
+	padding-top: 6px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	padding-left: 0px;
+}
+

@@ -40,6 +40,10 @@
  margin: 0;
  text-align: center;
 }
+ .work-section h4 {
+ margin-left: 20px;
+ margin-right: 20px;
+ }
  .person {
  margin: 0 auto 50px;
 }
@@ -66,11 +70,19 @@
  padding-top: 30%;
 }
  .banner-text h1 {
- font-size: 42px;
+ font-size: 36px;
 }
  .banner-text p {
  font-size: 18px;
 }
+ .container h1 {
+    font-size: 36px;
+ }
+ .container h4 {
+ font-size: 14px;
+ margin-left: 10px;
+ margin-right: 10px;
+ }
  .flexslider {
  padding-bottom: 80px;
 }
@@ -85,8 +97,17 @@
  .banner-text {
  padding-top: 35%;
 }
+.container h1 {
+    font-size: 36px;
+ }
+ .container h4 {
+ font-size: 14px;
+ margin-left: 10px;
+ margin-right: 10px;
+}
  .testimonials p {
  font-size: 12px;
+}
 }
 @media screen and (max-width: 480px) {
  .banner-text {
@@ -97,6 +118,7 @@
 }
  .testimonials p {
  font-size: 12px;
+}
 }
 @media screen and (max-width: 320px) {
  .banner-text {

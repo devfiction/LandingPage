@@ -53,8 +53,14 @@ $(document).ready(function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
 	});
+	var videoWidth = 0;
+	var videoHeight = 0;
 
 	$('.landingmovie').bind('ended', function() {  
+		videoWidth = $('.landingmovie').videoWidth;
+		videoHeight = $('.landingmovie').videoHeight;
+		$('.langingimage').attr('height', videoHeight);
+		$('.landingimage').attr('width', videoWidth);
 		$('.landingimage').show();
 		$('.landingmovie').hide();
 	});
